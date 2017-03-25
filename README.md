@@ -3,10 +3,14 @@ Meteor-CDN
 
 Serve static content from a CDN like CloudFlare or CloudFront. This package changes the domain of the bundled css and js files to the environment variable CDN_URL. If the CDN_URL environment variable is not present, the default behaviour will be unchanged.
 
+### Purpose of this fork
+
+This is a simple modification of the `nitrolabs:cdn` package, replacing Galaxy-specific code with code for Clever Cloud in one spot in `server.js`.
+
 Installation
 ===============
 ```sh
-meteor add nitrolabs:cdn
+meteor add banjerluke:cdn-clevercloud
 ```
 
 Setup CloudFront or CloudFlare to proxy requests to your Meteor server. Then run Meteor with:

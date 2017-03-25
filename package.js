@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'nitrolabs:cdn',
+  name: 'banjerluke:cdn-clevercloud',
   version: '1.2.10',
-  summary: 'Serve Meteor content from a CDN',
-  git: 'https://github.com/nitrolabs/meteor-cdn',
+  summary: 'Serve Meteor content from a CDN with Clever Cloud',
+  git: 'https://github.com/banjerluke/meteor-cdn-clevercloud',
   documentation: 'README.md'
 });
 
@@ -20,7 +20,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('nitrolabs:cdn');
+  api.use('banjerluke:cdn-clevercloud');
   api.addFiles('tests/client.js','client');
   api.addFiles('tests/server.js','server');
 
